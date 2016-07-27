@@ -10,3 +10,16 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+/bin/
+/build/
+/eclipse/
+/run/
+/PrimitiveTools_Client.launch
+/PrimitiveTools_Server.launch
+/setup_workspace.bat
+/.git/
+/.gradle/
+/.settings/
+/.classpath
+/.project
