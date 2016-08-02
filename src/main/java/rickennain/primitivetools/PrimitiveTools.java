@@ -14,12 +14,12 @@ public class PrimitiveTools {
 	@Mod.Instance(Reference.MOD_ID)
 	public static PrimitiveTools instance;
 	
-	@SidedProxy( clientSide = "rickennain.primitivetools.proxy.ClientProxy", serverSide = "rickennain.primitivetools.proxy.ServerProxy", modId = "PrimitiveToolsModID")
+	@SidedProxy( clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static IProxy proxy;
 	
 	@Mod.EventHandler
 	public void preinit( FMLPreInitializationEvent event){
-
+		
 	}
 	
 	@Mod.EventHandler
