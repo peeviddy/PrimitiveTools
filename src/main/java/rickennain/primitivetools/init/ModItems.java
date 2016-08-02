@@ -1,17 +1,28 @@
 package rickennain.primitivetools.init;
 
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import rickennain.primitivetools.item.ItemPrimitiveTool;
-import rickennain.primitivetools.reference.Reference;
 import rickennain.primitivetools.item.ItemFlintAxe;
 
 public class ModItems {
-
-	public static ItemPrimitiveTool flint_axe = new ItemPrimitiveTool();
+	
+	public static Item flint_axe;
 	
 	public static void init(){
-		
-		GameRegistry.register(flint_axe.setRegistryName("flint_axe"));
+		flint_axe = new ItemFlintAxe();
+	}
+	
+	public static void register(){
+		GameRegistry.register(flint_axe);
+	}
+	
+	public static void registerRenders(){
+		registerRender(flint_axe);
+	}
+	
+	private static void registerRender(Item item){
+		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 	}
 }

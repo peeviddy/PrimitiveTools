@@ -1,10 +1,10 @@
 package rickennain.primitivetools;
 
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import rickennain.primitivetools.init.ModItems;
 import rickennain.primitivetools.proxy.IProxy;
 import rickennain.primitivetools.reference.Reference;
@@ -22,11 +22,13 @@ public class PrimitiveTools {
 	public void preinit( FMLPreInitializationEvent event){
 		
 		ModItems.init();
+		ModItems.register();
+		//ModItems.registerRenders(); //this has to be client only
 	}
 	
 	@Mod.EventHandler
 	public void init( FMLInitializationEvent event){
-
+		
 	}
 	
 	@Mod.EventHandler

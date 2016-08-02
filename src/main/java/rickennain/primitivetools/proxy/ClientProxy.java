@@ -1,5 +1,10 @@
 package rickennain.primitivetools.proxy;
 
-public class ClientProxy extends CommonProxy {
+import rickennain.primitivetools.init.ModItems;
 
+public class ClientProxy extends CommonProxy {
+	
+	public void init(){
+		ModItems.registerRenders();
+	}
 }

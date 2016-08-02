@@ -1,9 +1,12 @@
 package rickennain.primitivetools.item;
 
-public class ItemFlintAxe extends ItemPrimitiveTool{
+import net.minecraft.item.Item;
+import rickennain.primitivetools.reference.Reference;
+
+public class ItemFlintAxe extends Item{
 
 	public ItemFlintAxe(){
-		
-		super();
+		setUnlocalizedName(Reference.rptItems.FLINT_AXE.getUnlocalizedName());
+		setRegistryName(Reference.rptItems.FLINT_AXE.getRegistryName());
 	}
 }
