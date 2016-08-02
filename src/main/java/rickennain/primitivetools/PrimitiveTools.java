@@ -1,16 +1,17 @@
 package rickennain.primitivetools;
 
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import rickennain.primitivetools.proxy.IProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.SidedProxy;
+import rickennain.primitivetools.proxy.IProxy;
+import rickennain.primitivetools.reference.Reference;
 
-@Mod(modid = "PrimitiveToolsModID", name = "Primitive Tools Mod", version = "alpha")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class PrimitiveTools {
 	
-	@Mod.Instance("PrimitiveToolsModID")
+	@Mod.Instance(Reference.MOD_ID)
 	public static PrimitiveTools instance;
 	
 	@SidedProxy( clientSide = "rickennain.primitivetools.proxy.ClientProxy", serverSide = "rickennain.primitivetools.proxy.ServerProxy", modId = "PrimitiveToolsModID")

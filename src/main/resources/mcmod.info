@@ -3,7 +3,7 @@
   "modid": "PrimitiveToolsModID",
   "name": "Primitive Tools Mod",
   "description": "I always thought wooden tools were dumb",
-  "version": "0.0.1",
+  "version": "alpha",
   "mcversion": "1.10.2",
   "authorList": ["rickennain"]
 }
