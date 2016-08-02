@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.SidedProxy;
+import rickennain.primitivetools.init.ModItems;
 import rickennain.primitivetools.proxy.IProxy;
 import rickennain.primitivetools.reference.Reference;
 
@@ -20,6 +21,7 @@ public class PrimitiveTools {
 	@Mod.EventHandler
 	public void preinit( FMLPreInitializationEvent event){
 		
+		ModItems.init();
 	}
 	
 	@Mod.EventHandler
