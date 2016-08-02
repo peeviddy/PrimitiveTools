@@ -1,5 +1,5 @@
 package rickennain.primitivetools.proxy;
 
-public class ClientProxy {
+public class ClientProxy extends CommonProxy {
 
 }
