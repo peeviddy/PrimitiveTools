@@ -20,9 +20,11 @@ public class ModItems {
 	
 	public static void registerRenders(){
 		registerRender(flint_axe);
+		System.out.println( "flint_axe's unlocalized name is: " + flint_axe.getUnlocalizedName() );
 	}
 	
 	private static void registerRender(Item item){
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
+		//the line above might be the issue with the texture not showing up
 	}
 }

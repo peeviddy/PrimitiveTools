@@ -21,14 +21,13 @@ public class PrimitiveTools {
 	
 	@Mod.EventHandler
 	public void preinit( FMLPreInitializationEvent event){
-		
 		ModItems.init();
 		ModItems.register();
+		proxy.init();
 	}
 	
 	@Mod.EventHandler
 	public void init( FMLInitializationEvent event){
-		proxy.init();
 	}
 	
 	@Mod.EventHandler
