@@ -23,7 +23,7 @@ public class PrimitiveTools {
 		
 		ModItems.init();
 		ModItems.register();
-		//ModItems.registerRenders(); //this has to be client only
+		ModItems.registerRenders(); //this has to be client only
 	}
 	
 	@Mod.EventHandler
