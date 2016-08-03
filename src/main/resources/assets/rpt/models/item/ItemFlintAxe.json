@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": ""
+        "layer0": "rpt:items/ItemFlintAxe"
     },
     "display": {
         "thirdperson": {
