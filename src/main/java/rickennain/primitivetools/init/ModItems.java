@@ -18,7 +18,7 @@ public class ModItems {
 	
 	public static void init(){
 		flint_axe_head = new ItemFlintAxeHead();
-		flint_axe = new ItemFlintAxe();
+		flint_axe = new ItemFlintAxe(FLINT);
 	}
 	
 	public static void register(){
@@ -33,6 +33,5 @@ public class ModItems {
 	
 	private static void registerRender(Item item){
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
-		//the line above might be the issue with the texture not showing up
 	}
 }
