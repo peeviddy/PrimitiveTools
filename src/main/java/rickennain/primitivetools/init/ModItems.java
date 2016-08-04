@@ -18,7 +18,7 @@ public class ModItems {
 	
 	public static void init(){
 		flint_axe_head = new ItemFlintAxeHead();
-		flint_axe = new ItemFlintAxe(FLINT);
+		flint_axe = new ItemFlintAxe();
 	}
 	
 	public static void register(){
