@@ -1,7 +1,7 @@
 {
     "parent": "rpt:builtin/generated",
     "textures":{
-        "layer0":"rpt:items/ItemFlintAxe"
+        "layer0":"rpt:items/ItemFlintAxeHead"
     },
     "display": {
         "thirdperson": {
@@ -15,4 +15,4 @@
             "scale": [ 2.0, 2.0, 2.0 ]
         }
     }
-}?
+}﻿
