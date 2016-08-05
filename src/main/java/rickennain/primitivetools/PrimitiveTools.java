@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import rickennain.primitivetools.init.ModItems;
+import rickennain.primitivetools.init.Recipes;
 import rickennain.primitivetools.proxy.CommonProxy;
 import rickennain.primitivetools.reference.Reference;
 
@@ -22,11 +23,14 @@ public class PrimitiveTools {
 	public void preinit( FMLPreInitializationEvent event){
 		ModItems.init();
 		ModItems.register();
-		proxy.init();
+		proxy.init(); // registering the renders clientside only
 	}
 	
 	@Mod.EventHandler
 	public void init( FMLInitializationEvent event){
+		
+		//recipes are initialized here
+		Recipes.init();
 	}
 	
 	@Mod.EventHandler
