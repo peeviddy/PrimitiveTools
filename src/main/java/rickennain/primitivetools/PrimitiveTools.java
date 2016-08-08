@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import rickennain.primitivetools.init.ModItems;
 import rickennain.primitivetools.init.Recipes;
 import rickennain.primitivetools.proxy.CommonProxy;
+import rickennain.primitivetools.proxy.IProxy;
 import rickennain.primitivetools.reference.Reference;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
@@ -19,18 +20,21 @@ public class PrimitiveTools {
 	@SidedProxy( clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
 	
+	@SidedProxy( clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
+	public static CommonProxy TESTproxy;
+	
 	@Mod.EventHandler
 	public void preinit( FMLPreInitializationEvent event){
 		ModItems.init();
 		ModItems.register();
-		proxy.init(); // registering the renders clientside only
+		proxy.init();
 	}
 	
 	@Mod.EventHandler
 	public void init( FMLInitializationEvent event){
 		
-		//recipes are initialized here
 		Recipes.init();
+		proxy.eventHandlerInit();
 	}
 	
 	@Mod.EventHandler
