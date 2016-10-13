@@ -2,5 +2,7 @@
 itemGroup.rpt=Primitive Tools
 
 #Items#
+item.flintspearhead.name=Flint Spear Head
+#item.flintspear.name=Flint Spear
 item.flintaxehead.name=Flint Axe Head
 item.flintaxe.name=Flint Axe

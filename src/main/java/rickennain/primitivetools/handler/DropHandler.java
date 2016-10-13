@@ -2,7 +2,6 @@ package rickennain.primitivetools.handler;
 
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.passive.EntityAnimal;
-import net.minecraft.entity.passive.EntityChicken;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;

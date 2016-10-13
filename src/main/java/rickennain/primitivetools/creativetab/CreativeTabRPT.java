@@ -7,8 +7,8 @@ import rickennain.primitivetools.reference.Reference;
 
 public class CreativeTabRPT {
 	
-	public static final CreativeTabs RPT_TAB = new CreativeTabs(Reference.MOD_ID.toLowerCase()){ // the parameter is the mod id in lowercase and is localized in en_US.lang
-		
+	public static final CreativeTabs RPT_TAB = new CreativeTabs(Reference.MOD_ID.toLowerCase()){ 
+		// the parameter is the mod id in lowercase and is localized in en_US.lang
 		@Override
 		public Item getTabIconItem(){ //this method is what displays in the tab
 			

@@ -9,10 +9,10 @@ public class Reference {
 	public static final String SERVER_PROXY_CLASS = "rickennain.primitivetools.proxy.ServerProxy";
 	
 	public static enum rptItems{
-		/*FLINT_KNIFE_BLADE(), 
-		 *FLINT_KNIFE(), 
-		 *FLINT_SPEAR_HEAD(), 
+		/*FLINT_KNIFE_BLADE(),
+		 *FLINT_KNIFE(),
 		 *FLINT_SPEAR()*/
+		FLINT_SPEAR_HEAD("flintspearhead", "ItemFlintSpearHead"),
 		FLINT_AXE_HEAD("flintaxehead", "ItemFlintAxeHead"),
 		FLINT_AXE("flintaxe", "ItemFlintAxe");
 		

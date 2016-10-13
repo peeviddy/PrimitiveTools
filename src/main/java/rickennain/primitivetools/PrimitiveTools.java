@@ -8,7 +8,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import rickennain.primitivetools.init.ModItems;
 import rickennain.primitivetools.init.Recipes;
 import rickennain.primitivetools.proxy.CommonProxy;
-import rickennain.primitivetools.proxy.IProxy;
 import rickennain.primitivetools.reference.Reference;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
@@ -24,21 +23,21 @@ public class PrimitiveTools {
 	public static CommonProxy TESTproxy;
 	
 	@Mod.EventHandler
-	public void preinit( FMLPreInitializationEvent event){
+	public void preinit(FMLPreInitializationEvent event){
 		ModItems.init();
 		ModItems.register();
 		proxy.init();
 	}
 	
 	@Mod.EventHandler
-	public void init( FMLInitializationEvent event){
+	public void init(FMLInitializationEvent event){
 		
 		Recipes.init();
 		proxy.eventHandlerInit();
 	}
 	
 	@Mod.EventHandler
-	public void postinit( FMLPostInitializationEvent event){
+	public void postinit(FMLPostInitializationEvent event){
 
 	}
 	
